@@ -1,0 +1,105 @@
+# ============================================================
+# Large generated project outputs
+# ============================================================
+
+/outputs
+/checkpoints/
+/models/
+/artifacts/
+
+# ============================================================
+# Raw, private, and generated datasets
+# ============================================================
+
+/data/
+/raw_data/
+/private_data/
+
+*.csv
+*.tsv
+*.jsonl
+*.ndjson
+*.parquet
+*.arrow
+*.feather
+*.pkl
+*.pickle
+
+# Small manually reviewed samples are allowed in samples/.
+!samples/**/*.csv
+!samples/**/*.tsv
+!samples/**/*.jsonl
+
+# ============================================================
+# Model files
+# ============================================================
+
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+# ============================================================
+# Secrets and credentials
+# ============================================================
+
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+*.p12
+*.pfx
+
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+
+credentials.json
+service-account*.json
+secrets.*
+token.json
+
+# ============================================================
+# Python environments and generated files
+# ============================================================
+
+.venv/
+venv/
+env/
+
+__pycache__/
+*.py[cod]
+*.so
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ============================================================
+# Runtime files
+# ============================================================
+
+logs/*
+!logs/.gitkeep
+
+*.log
+*.tmp
+*.temp
+*.swp
+
+# ============================================================
+# Notebook, editor, and operating-system files
+# ============================================================
+
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+.DS_Store
+Thumbs.db

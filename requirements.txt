@@ -1,0 +1,7 @@
+# Phase 0 uses only standard command-line and Git tools.
+#
+# Python dependencies will be added only when a project phase
+# genuinely requires them.
+#
+# Phase 1 will first inspect the corpus structure before deciding
+# whether a streaming JSON package such as ijson is necessary.

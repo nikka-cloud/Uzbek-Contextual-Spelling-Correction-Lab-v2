@@ -1,0 +1,24 @@
+project:
+  name: "Uzbek Contextual Spelling Correction Lab v2"
+  version: "0.1.0"
+  random_seed: 42
+
+paths:
+  raw_corpus: "/mnt/uzbekvoice_storage/text_data/normalized.json"
+  repository_root: "/root/uzbek-contextual-spelling-correction-lab-v2"
+  external_storage_root: "/mnt/uzbekvoice_storage/projects/uzbek-contextual-spelling-correction-lab-v2"
+  output_root: "/mnt/uzbekvoice_storage/projects/uzbek-contextual-spelling-correction-lab-v2/outputs"
+  repository_output_link: "/root/uzbek-contextual-spelling-correction-lab-v2/outputs"
+
+data_policy:
+  raw_corpus_is_immutable: true
+  overwrite_raw_corpus_allowed: false
+
+  synthetic_is_gold_default: false
+  auto_replace_allowed_default: false
+  synthetic_review_required_default: true
+
+development:
+  current_phase: 0
+  initial_experiment_only: true
+  full_dataset_training_allowed: false
