@@ -1,0 +1,110 @@
+{
+  "phase": "Phase 1 - Raw Corpus Investigation",
+  "status": "APPROVED",
+  "audit_version": "2.2",
+  "input": {
+    "format": "top-level JSON array",
+    "size_bytes": 13853548528,
+    "records_scanned": 13884795,
+    "source_record_id": "zero-based JSON-array position"
+  },
+  "structure": {
+    "dictionary_records": 13884795,
+    "non_dictionary_records": 0,
+    "records_with_text_field": 13884795,
+    "missing_text_field": 0,
+    "string_text_records": 13884795,
+    "non_string_text_records": 0,
+    "empty_or_whitespace_texts": 0
+  },
+  "text_length_characters": {
+    "minimum": 8,
+    "median": 856.0,
+    "p90": 1668.0,
+    "p95": 1999.0,
+    "p99": 2887.0,
+    "maximum": 20216,
+    "mean": 965.749590541308
+  },
+  "quality_flags": {
+    "ends_with_exactly_one_ascii_space": 13855549,
+    "ends_with_exactly_one_ascii_space_percentage": 99.78936671373255,
+    "no_trailing_whitespace": 29246,
+    "leading_whitespace": 1266,
+    "repeated_horizontal_whitespace": 11619,
+    "person_name_like": 993
+  },
+  "script_distribution": {
+    "LATIN": 13884793,
+    "NO_ALPHABETIC_CHARACTERS": 2,
+    "interpretation": "Script classification is not language identification."
+  },
+  "apostrophe_variants": {
+    "U+0027_APOSTROPHE": 236693950,
+    "all_other_configured_variants": 0
+  },
+  "apostrophe_gap_signals": {
+    "records_with_high_confidence_gap": 317746,
+    "records_with_high_confidence_gap_percentage": 2.288445742266991,
+    "records_with_ambiguous_gap": 175900,
+    "records_with_ambiguous_gap_percentage": 1.2668534177134052,
+    "records_with_any_gap_signal": 383021,
+    "records_with_any_gap_signal_percentage": 2.7585643144173178,
+    "high_confidence_match_count": 863348,
+    "ambiguous_match_count": 325906,
+    "rule_match_counts": {
+      "BO_L_PATTERN": 371822,
+      "E_LON_PATTERN": 10713,
+      "KO_R_PATTERN": 145912,
+      "MA_LUM_PATTERN": 66554,
+      "O_T_PATTERN": 190798,
+      "QO_L_PATTERN": 40642,
+      "TO_G_R_PATTERN": 36907,
+      "O_Q_PATTERN": 68863,
+      "O_Z_PATTERN": 257043
+    }
+  },
+  "duplicates": {
+    "candidate_hash_groups": 71658,
+    "candidate_record_count": 158496,
+    "candidate_records_verified": 158496,
+    "exact_duplicate_groups": 71658,
+    "duplicate_occurrences_after_first": 86838,
+    "duplicate_occurrences_after_first_percentage": 0.6254179481944098,
+    "hash_collision_groups": 0
+  },
+  "source_credit_heuristics": {
+    "contains_source_or_credit_phrase": 410023,
+    "standalone_source_or_credit": 13423,
+    "review_only": true
+  },
+  "short_record_roles": {
+    "SHORT_SENTENCE_LIKE": 86834,
+    "SHORT_CREDIT_LIKE": 9794,
+    "SHORT_FRAGMENT_OR_UNKNOWN": 1367,
+    "total_short_records": 97995,
+    "review_only": true
+  },
+  "execution": {
+    "parser": "ijson.backends.python",
+    "block_size": 10000,
+    "block_rows_written": 1389,
+    "hash_shard_count": 256,
+    "audit_elapsed_seconds": 3672.7195851802826,
+    "duplicate_elapsed_seconds": 177.41825699806213,
+    "audit_output_size": "892M",
+    "duplicate_output_size": "35M",
+    "hash_shard_size": "584M",
+    "sqlite_wal_shm_files": 0
+  },
+  "validation": {
+    "all_internal_checks_passed": true,
+    "audit_complete_marker": true,
+    "duplicate_complete_marker": true,
+    "all_duplicate_candidates_verified": true,
+    "audit_immutability_check": "PASS",
+    "duplicate_immutability_check": "PASS",
+    "automatic_correction_performed": false,
+    "automatic_exclusion_performed": false
+  }
+}

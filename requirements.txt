@@ -1,7 +1,2 @@
-# Phase 0 uses only standard command-line and Git tools.
-#
-# Python dependencies will be added only when a project phase
-# genuinely requires them.
-#
-# Phase 1 will first inspect the corpus structure before deciding
-# whether a streaming JSON package such as ijson is necessary.
+# Streaming parser for the 13 GB top-level JSON array.
+ijson==3.5.0
