@@ -1,0 +1,51 @@
+{
+  "phase": 2,
+  "phase_name": "safe_derived_corpus_normalization",
+  "script_version": "1.0",
+  "schema_version": "phase_02_normalized_record_v1",
+  "input_records": 13884795,
+  "output_records": 13884795,
+  "records_changed": 13855549,
+  "records_unchanged": 29246,
+  "records_review_required": 384243,
+  "records_without_review_flags": 13500552,
+  "characters_removed": 13855549,
+  "approved_operations": {
+    "TRIM_ONE_TRAILING_ASCII_SPACE": 13855549
+  },
+  "status_counts": {
+    "CHANGED_SAFE": 13472845,
+    "CHANGED_SAFE_REVIEW_REQUIRED": 382704,
+    "UNCHANGED": 27707,
+    "UNCHANGED_REVIEW_REQUIRED": 1539
+  },
+  "review_flag_counts": {
+    "HIGH_CONFIDENCE_APOSTROPHE_GAP": 317746,
+    "AMBIGUOUS_APOSTROPHE_GAP": 175900,
+    "LEADING_WHITESPACE": 1266
+  },
+  "sharding": {
+    "format": "JSONL",
+    "records_per_part": 100000,
+    "part_count": 139,
+    "complete_part_count": 138,
+    "final_part_record_count": 84795,
+    "first_source_record_id": 0,
+    "last_source_record_id": 13884794,
+    "approximate_output_size": "21G"
+  },
+  "validation": {
+    "producer_status": "PASS",
+    "independent_verification_status": "PASS",
+    "independent_records_verified": 13884795,
+    "producer_validation_problem_count": 0,
+    "independent_problem_count": 0,
+    "immutability_check": "PASS",
+    "idempotence_check": "PASS"
+  },
+  "interpretation": {
+    "mechanically_normalized": true,
+    "linguistically_gold": false,
+    "approved_for_phase_3_input": true
+  }
+}
