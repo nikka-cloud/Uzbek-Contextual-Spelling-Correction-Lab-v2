@@ -103,3 +103,6 @@ logs/*
 
 .DS_Store
 Thumbs.db
+
+# Local prototype archives
+scripts/archive/
